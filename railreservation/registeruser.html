@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            body {font-family: Arial, Helvetica, sans-serif;
+                background-image: url('train2.jpg');
+                background-size:100% 200%;
+                background-repeat: no-repeat;
+            }
+            form { 
+
+                width: 50%;
+                opacity: 0.7;
+            }
+
+            input[type=text], input[type=password],input[type=number]  {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+
+            button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+            }
+
+            button:hover {
+                opacity: 0.8;
+            }
+
+            .cancelbtn {
+                width: auto;
+                padding: 10px 18px;
+                background-color: #f44336;
+
+            }
+
+            .imgcontainer {
+                text-align: center;
+                margin: 24px 0 12px 0;
+            }
+
+            img.avatar {
+                width: 10%;
+                border-radius: 50%;
+            }
+
+            .container {
+                padding: 16px;
+                background:#f1f1f1;
+
+            }
+
+            span.register {
+                float: right;
+                padding-top: 16px;
+            }
+
+            /* Change styles for span and cancel button on extra small screens */
+            @media screen and (max-width: 300px) {
+                span.psw {
+                    display: block;
+                    float: none;
+                }
+                .cancelbtn {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+
+
+        <div id="outer" align = "center">
+            <form method = "post" action="register.php">
+                <div class="imgcontainer">
+
+                    <img src="user.png" alt="Avatar" class="avatar">
+                </div >
+
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+
+                    <label for="phone"><b>Phone Number</b></label>
+                    <input type="text" placeholder="Enter Phone Number" name="phone"  pattern="[1-9]{1}[0-9]{9}" required>
+
+
+                    <label for="psw"><b> Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">Register</button>
+                </div>
+
+
+            </form>
+        </div>
+
+
+    </body>
+
+</html>
